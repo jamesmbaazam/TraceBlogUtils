@@ -1,25 +1,13 @@
-Package: packagetemplate
-Title: Your Package Title in Titlecase
-Version: 0.0.1
+Package: TRACEBlogUtils
+Title: Utility Functions For Contributing Blog Posts to the Epiverse-TRACE Blog
+Version: 0.0.0.9999
 Authors@R: c(
-    person("James M.", "Azam", , "james.azam@lshtm.ac.uk", role = "aut",
-           comment = c(ORCID = "0000-0001-5782-7330")),
-    person("Hugo", "Gruson", , "hugo@data.org", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-4094-1476")),
-    person("Pratik", "Gupte", , "pratik.gupte@lshtm.ac.uk", role = "aut",
-           comment = c(ORCID = "0000-0001-5294-7819")),
-    person("Joshua W.", "Lambert", , "joshua.lambert@lshtm.ac.uk", role = "aut",
-           comment = c(ORCID = "0000-0001-5218-3046")),
-    person("Karim", "Mané", , "karim.mane@lshtm.ac.uk", role = "aut",
-           comment = c(ORCID = "0000-0002-9892-2999")),
-    person("Jaime A.", "Pavlich-Mariscal", , "jpavlich@javeriana.edu.co", role = "ctb",
-           comment = c(ORCID = "0000-0002-3892-6680")),
-    person("Chris", "Hartgerink", , "chris@data.org", role = "ctb",
-           comment = c(ORCID = "0000-0003-1050-6809"))
+    person("James M.", "Azam", , "james.azam@lshtm.ac.uk",
+          role = c("aut", "cre", "cph"),
+          comment = c(ORCID = "0000-0001-5782-7330"))
   )
-Description: Your package description. It must end with a period (".") and
-    include relevant bibliographical references if applicable, using the
-    following format: Author et al. (2023) <doi:10.5281/zenodo.6619350>.
+Description: Makes contributing blogposts to the Epiverse-Trace blog as
+    seamless as possible in a manner similar to the usethis package.
 License: MIT + file LICENSE
 Suggests: 
     knitr,
@@ -34,4 +22,9 @@ Config/testthat/parallel: true
 Encoding: UTF-8
 Language: en-GB
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
+Imports: 
+    checkmate,
+    cli,
+    git2r,
+    rstudioapi
