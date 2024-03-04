@@ -7,6 +7,5 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(packagetemplate)
 
-test_check("packagetemplate", stop_on_warning = FALSE)
+test_check("TRACEBlogUtils")
